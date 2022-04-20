@@ -18,7 +18,7 @@ typedef struct sll nd;
 
 nd* insert_front(nd *f)
 {
-    nd *t, *p;
+    nd *t;
     t=(nd*)malloc(sizeof(nd));
     printf("Enter Student USN : ");
     scanf("%s", t->d.usn);
