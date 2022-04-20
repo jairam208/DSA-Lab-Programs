@@ -37,7 +37,8 @@ int g(char s)
 
 int main()
 {
-    char c, s[MAX]={'#'};
+    char s[MAX]={'#'};
+    // char c;
     char inf[MAX], pf[MAX];
     int top=0, i, j=0;
     printf("Enter the Infix Expression : ");
