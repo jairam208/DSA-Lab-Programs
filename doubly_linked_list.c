@@ -49,7 +49,7 @@ void display(nd* h)
     printf("The Employees List is : \n");
     while(t!=NULL)
     {
-        printf("%s %s %s %s %s %.2f", t->ssn, t->name, t->dept, t->design, t->phno, t->sal);
+        printf("%s %s %s %s %s %.2f\n", t->ssn, t->name, t->dept, t->design, t->phno, t->sal);
         t=t->rlink;
     }
 }
@@ -90,7 +90,7 @@ nd* delete_front(nd* h)
         return h;
     }
     nd* p=h;
-    printf("The deleted information is : \n%s %s %s %s %s %.2f", h->ssn, h->name, h->dept, h->design, h->phno, h->sal);
+    printf("The deleted information is : \n%s %s %s %s %s %.2f\n", h->ssn, h->name, h->dept, h->design, h->phno, h->sal);
     h=p->rlink;
     return h;
 }
