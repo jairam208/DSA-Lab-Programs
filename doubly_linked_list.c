@@ -132,7 +132,7 @@ int main()
             case 2 : h=insert_rear(h); break;
             case 3 : h=delete_front(h); break;
             case 4 : h=delete_rear(h); break;
-            case 5 : printf("%d", count(h)); break;
+            case 5 : printf("%d\n", count(h)); break;
             case 6 : display(h); break;
             default : exit(0);
         } 
