@@ -15,7 +15,7 @@ typedef struct employee emp;
 struct hashtable
 {
     int key; // empno; unique key value
-    long int addr; // OFFSET address in flie
+    long int addr; // OFFSET address in file
 };
 typedef struct hashtable ht;
 
