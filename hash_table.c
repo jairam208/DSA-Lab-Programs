@@ -47,7 +47,7 @@ void search(ht* h, int n)
     fseek(fp, h[hindex].addr, SEEK_SET);
     // fread(&a, sizeof(emp), 1, fp); // stores info in binary format
     fscanf(fp, "%d%s%d", &(a.empno), a.name, &(a.sal));
-    printf("%d%s%d\n", a.empno, a.name, a.sal);
+    printf("%d %s %d\n", a.empno, a.name, a.sal);
 }
 
 void display(ht* h, int n)
@@ -92,7 +92,7 @@ void insert(ht* h, int n)
         fseek(fp, 0, SEEK_END);
         h[hindex].addr=ftell(fp);
         // fwrite(&a, sizeof(emp), 1, fp);
-        fprintf(fp, "%d%s%d", a.empno, a.name, a.sal);
+        fprintf(fp, "%d %s %d", a.empno, a.name, a.sal);
         printf("Entry Successful\n");
         if(flag)
             printf("Linear Probing used\n");
